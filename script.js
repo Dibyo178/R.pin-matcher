@@ -35,7 +35,7 @@ for(item of buttons){
             screen.value =screenValue;
         }
 else if(buttonText =='<'){
-    deleteNumber();
+    deleteNumber();  // Delete number function call()..
 } 
         else{
             screenValue +=buttonText
@@ -87,7 +87,7 @@ submitBtn.addEventListener('click',function(){
 
         document.getElementById('pin-match').style.display='none';
 
-        reduce();
+        reduce(); // 3 try left function call()
     }
 })
 
