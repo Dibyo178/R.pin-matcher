@@ -13,14 +13,15 @@
             <div class="col-md-6">
                 <div class="pin-generator half-width">
                     <input  id="generateBox" class="form-control text-center" type="text">
-                    <button id="generateBtn"  class="generate-btn">Generate Pin</button>
+                    <button id="generateBtn"  onclick="generatePin()" class="generate-btn">Generate Pin</button>
+                    
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="input-section half-width">
                     <input id="screen" class="form-control text-center" type="text">
                     <div class="numbers">
-                        <div class="calc-body">
+                        <div id="digits-container" class="calc-body">
                             <div class="calc-button-row">
                               <div class="button">7</div>
                               <div class="button">8</div>
@@ -42,7 +43,7 @@
                                 <div class="button">C</div>
                             </div>
                             <div>
-                                <button id="submit" type="submit" class="submit-btn">Submit</button>
+                                <button id="submit"  onclick ='verifyPin()' type="submit" class="submit-btn">Submit</button>
                                 <p class="action-left"> <span id="action">3</span>try left</p>
                             </div>
                     </div>
@@ -52,8 +53,10 @@
         <div  class="notify-section">
             <p id="pin-mismatch"  class="notify">❌ Pin Didn't Match, Please try again</p>
             <p id="pin-match" class="notify">✅ Pin Matched... Secret door is opening for you</p>
+ 
         </div>
     </div>
 </body>
-<script src="script.js"></script>
+<!-- <script src="script.js"></script> -->
+<script src="pinMatcher.js"></script>
 </html>

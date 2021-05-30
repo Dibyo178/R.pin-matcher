@@ -11,7 +11,8 @@ generateBtn.addEventListener('click',function(){
 
     var num=1000;
 
-document.getElementById('generateBox').value=(Math.ceil(num+Math.random()*9000));
+// document.getElementById('generateBox').value=(Math.ceil(num+Math.random()*1000));
+document.getElementById('generateBox').value=(num+Math.ceil(Math.random()*9000));
 
    
 })
